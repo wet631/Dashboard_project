@@ -1,0 +1,105 @@
+<template>
+  <div class="Dashboard_one">
+    <div class="header"></div>
+    <div class="left">
+      <leftOne></leftOne>
+    </div>
+    <div class="right"></div>
+  </div>
+</template>
+
+<script>
+import leftOne from "@/components/letfOne.vue";
+// import {getMockAttendancesList} from '@/server/api'
+export default {
+  name: "Dashboard_one",
+  data() {
+    return {};
+  },
+  components: {
+    leftOne,
+  },
+  created() {
+    // this.getList();
+    // this.getPeoleList();
+    // this.getAttendancesList();
+  },
+  methods: {
+    // getList() {
+    //   axios
+    //     .get("/api/user")
+    //     .then((response) => {
+    //       console.log(response.data); // 模拟的用户数据
+    //     })
+    //     .catch((error) => {
+    //       console.error(error);
+    //     });
+    // },
+
+    // getPeoleList() {
+    //   axios
+    //     .get("/api/peoples")
+    //     .then((response) => {
+    //       console.log(response.data, "个人数据"); // 模拟的用户数据
+    //     })
+    //     .catch((error) => {
+    //       console.error(error);
+    //     });
+    // },
+
+    // getAttendancesList() {
+    //   axios
+    //     .get("/api/mock/attendances")
+    //     .then((res) => {
+    //       console.log(res.data, "数据"); // 模拟的用户数据
+    //     })
+    //     .catch((error) => {
+    //       console.error(error);
+    //     });
+    // },
+  },
+};
+</script>
+
+<style scoped lang="scss">
+.Dashboard_one {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  box-sizing: border-box;
+  word-break: break-all;
+  color: #ffffff;
+  overflow: hidden;
+  .header {
+    // background-color:pink;
+    position: absolute;
+    width: 100%;
+    height: 0.86rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 410;
+  }
+  .left,
+  .right {
+    height: 9.55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0.2rem;
+    z-index: 410;
+    // background-color: #fff;
+  }
+  .left {
+    left: 0.18rem;
+    width: 3.36rem;
+  }
+  .right {
+    right: 0.18rem;
+    width: 3.4rem;
+  }
+}
+</style>
