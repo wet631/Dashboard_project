@@ -3,13 +3,20 @@
     <div class="header"></div>
     <div class="left">
       <leftOne></leftOne>
+      <leftTwo></leftTwo>
+      <leftThree></leftThree>
     </div>
-    <div class="right"></div>
+    <div class="right">
+      <rightOne></rightOne>
+    </div>
   </div>
 </template>
 
 <script>
 import leftOne from "@/components/letfOne.vue";
+import leftTwo from "@/components/leftTwo.vue";
+import leftThree from "@/components/leftThree.vue";
+import rightOne from "@/components/rightOne.vue";
 // import {getMockAttendancesList} from '@/server/api'
 export default {
   name: "Dashboard_one",
@@ -18,6 +25,9 @@ export default {
   },
   components: {
     leftOne,
+    leftTwo,
+    rightOne,
+    leftThree
   },
   created() {
     // this.getList();
@@ -35,7 +45,6 @@ export default {
     //       console.error(error);
     //     });
     // },
-
     // getPeoleList() {
     //   axios
     //     .get("/api/peoples")
@@ -46,7 +55,6 @@ export default {
     //       console.error(error);
     //     });
     // },
-
     // getAttendancesList() {
     //   axios
     //     .get("/api/mock/attendances")

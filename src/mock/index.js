@@ -1,5 +1,4 @@
 import Mock from 'mockjs';
-const Random = Mock.Random
 // 模拟用户信息接口
 Mock.mock('/api/user', 'get', {
   code: 200,
@@ -15,13 +14,15 @@ Mock.mock('/api/user', 'get', {
 Mock.mock('/api/posts', 'get', {
   code: 200,
   message: '成功',
-  'data|10': [
+  'data|5': [
     {
       id: '@guid',
       title: '@ctitle(5, 10)',
       content: '@cparagraph(3, 5)',
       author: '@cname',
       createTime: '@datetime',
+      // 时间
+      date: '@date("HH:mm")',
     },
   ],
 });
@@ -29,30 +30,14 @@ Mock.mock('/api/posts', 'get', {
 Mock.mock('/api/peoples', 'get', {
     code: 200,
     message: '成功',
-    'list|10': [{
+    'list|5': [{
         'id|+1': 1,
-        'number|1-10': 7,
         // 英文姓名
         'name': '@name',
-        // 颜色
-        'color': '@color',
-        // 英文标题
-        'title': '@title',
-        // 链接
-        'url': '@url("http")',
         // 邮箱
         'email': '@email',
-        // 图片
-        'image': Random.image('200x200', '#50B347', '#FFF', 'Mock.js'),
         // 时间
-        'date': '@date("yyyy-MM-dd HH:mm:ss")',
-        'date2': '@dateTime',
-        // 汉字
-        'ctitle': '@ctitle(8)',
-        // 汉字姓名
-        'canme': '@cname()',
-        // 地址
-        'cadd': '@province' + '@city' + '@county',
+        'date': '@date("HH:mm")',
         // 手机号
         'phone': /^1[385][1-9]\d{8}/
       }]
