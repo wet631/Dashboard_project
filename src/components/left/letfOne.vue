@@ -165,7 +165,7 @@ export default {
 .box {
   width: 100%;
   height: 2.5rem;
-  background: url("../assets/pic/kuang-1@2x.png") no-repeat;
+  background: url("../../assets/pic/kuang-1@2x.png") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;

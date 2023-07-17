@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import leftOne from "@/components/letfOne.vue";
-import leftTwo from "@/components/leftTwo.vue";
-import leftThree from "@/components/leftThree.vue";
+import leftOne from "@/components/left/letfOne.vue";
+import leftTwo from "@/components/left/leftTwo.vue";
+import leftThree from "@/components/left/leftThree.vue";
 import rightOne from "@/components/rightOne.vue";
 // import {getMockAttendancesList} from '@/server/api'
 export default {

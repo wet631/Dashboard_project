@@ -3,7 +3,7 @@
     <div class="title">预警</div>
     <div class="overview"></div>
     <div class="sub-title" v-if="showChart">
-      <img src="../assets/pic/left2_subtitle_icon@2x.png" alt="" />
+      <img src="../../assets/pic/left2_subtitle_icon@2x.png" alt="" />
       <div class="subtitile-text">考勤</div>
     </div>
     <div class="sub-title" v-else>
@@ -147,7 +147,7 @@ export default {
 .box {
   width: 100%;
   height: 3.76rem;
-  background: url("../assets/pic/kuang-2@2x.png") no-repeat;
+  background: url("../../assets/pic/kuang-2@2x.png") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@ export default {
   .overview {
     width: 92%;
     height: 1.11rem;
-    background: url("../assets/pic/left2_inner_border@2x.png") no-repeat;
+    background: url("../../assets/pic/left2_inner_border@2x.png") no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
