@@ -58,8 +58,9 @@ export default {
           right: "6%",
           bottom: "10%",
           height: "60%",
-          // containLabel(grid 区域是否包含坐标轴的刻度标签)
+          // containLabel(grid区域是否显示包含坐标轴的刻度标签)
           containLabel: true,
+          // 网格分割线
           splitLine: {
             show: true, // 显示网格线
             lineStyle: {
@@ -71,13 +72,15 @@ export default {
           {
             type: "category",
             data: this.peopleList.map((item) => item.date),
+            // 文字
             axisLabel: {
               formatter: function (value) {
                 return value;
               },
+              // 取消x轴的文字间隔 让其都能展示出来
               interval: 0,
               textStyle: {
-                color: "#009bd2", // 设置 Y 轴标签的颜色
+                color: "#009bd2", // 设置 x 轴标签的颜色
               },
             },
             axisLine: {
@@ -112,8 +115,11 @@ export default {
             itemStyle: {
               color: "#006CFF",
             },
+            // 图形的高亮标签样式
             emphasis: {
               // hover样式
+              // focus: "series",
+              // blurScope: "coordinateSystem",
               itemStyle: {
                 opacity: 0.8,
                 shadowBlur: 10,

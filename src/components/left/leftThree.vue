@@ -43,6 +43,12 @@ export default {
     this.chart = echarts.init(this.$refs.chart);
     this.setOption();
   },
+  watch: {
+    "$store.state.baseUnit"() {
+      this.chart.resize();
+      this.setOption();
+    },
+  },
   methods: {
     setOption() {
       const options = {

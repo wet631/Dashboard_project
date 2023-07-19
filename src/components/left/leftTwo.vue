@@ -29,6 +29,12 @@ export default {
     this.getAttendancesList();
     this.chart = echarts.init(this.$refs.chart);
   },
+  watch: {
+    "$store.state.baseUnit"() {
+      this.chart.resize();
+      this.setOption();
+    },
+  },
   methods: {
     setOption() {
       const options = {
