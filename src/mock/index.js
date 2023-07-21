@@ -27,6 +27,7 @@ Mock.mock('/api/posts', 'get', {
   ],
 });
 
+
 Mock.mock('/api/peoples', 'get', {
     code: 200,
     message: '成功',

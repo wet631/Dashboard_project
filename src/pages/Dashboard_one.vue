@@ -1,6 +1,7 @@
 <template>
   <div class="Dashboard_one">
     <div class="header"></div>
+    <!-- <MapContainer></MapContainer> -->
     <div class="left">
       <leftOne></leftOne>
       <leftTwo></leftTwo>
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+// import MapContainer from "@/components/MapContainer";
 import leftOne from "@/components/left/letfOne.vue";
 import leftTwo from "@/components/left/leftTwo.vue";
 import leftThree from "@/components/left/leftThree.vue";
@@ -27,45 +29,11 @@ export default {
     leftOne,
     leftTwo,
     rightOne,
-    leftThree
+    leftThree,
+    // MapContainer,
   },
-  created() {
-    // this.getList();
-    // this.getPeoleList();
-    // this.getAttendancesList();
-  },
-  methods: {
-    // getList() {
-    //   axios
-    //     .get("/api/user")
-    //     .then((response) => {
-    //       console.log(response.data); // 模拟的用户数据
-    //     })
-    //     .catch((error) => {
-    //       console.error(error);
-    //     });
-    // },
-    // getPeoleList() {
-    //   axios
-    //     .get("/api/peoples")
-    //     .then((response) => {
-    //       console.log(response.data, "个人数据"); // 模拟的用户数据
-    //     })
-    //     .catch((error) => {
-    //       console.error(error);
-    //     });
-    // },
-    // getAttendancesList() {
-    //   axios
-    //     .get("/api/mock/attendances")
-    //     .then((res) => {
-    //       console.log(res.data, "数据"); // 模拟的用户数据
-    //     })
-    //     .catch((error) => {
-    //       console.error(error);
-    //     });
-    // },
-  },
+  created() {},
+  methods: {},
 };
 </script>
 
